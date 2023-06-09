@@ -129,7 +129,7 @@ inputEls.forEach((inputEl) => {
           inputEls[index].value = 1;
         } else if (inputEls[index].name === "sepia") {
           sepia = `sepia(0)`;
-          grayscaleValue.innerText = "0";
+          sepiaValue.innerText = "0";
           inputEls[index].value = 0;
         }
         alert(
@@ -178,7 +178,7 @@ inputEls.forEach((inputEl) => {
       inputEls[7].value = 1;
 
       sepia = `sepia(0)`;
-      grayscaleValue.innerText = "0";
+      sepiaValue.innerText = "0";
       inputEls[8].value = 0;
       img.style.filter = `${blur} ${brightness} ${contrast} ${grayscale} ${hueRotate} ${invert} ${opacity} ${saturate} ${sepia}`;
       filterProperty();
