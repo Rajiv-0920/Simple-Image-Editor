@@ -213,7 +213,7 @@ function alert(msg, property) {
   copyInfo.classList.add("show");
   setTimeout(() => {
     copyInfo.classList.remove("show");
-  }, 1500);
+  }, 2500);
   if (property) {
     copyInfo.innerText = `${msg} ${property}`;
   } else {
