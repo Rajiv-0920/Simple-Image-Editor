@@ -133,7 +133,8 @@ inputEls.forEach((inputEl) => {
           inputEls[index].value = 0;
         }
         alert(
-          inputEl.name.charAt(0).toUpperCase() + inputEl.name.slice(1),
+          inputEls[index].name.charAt(0).toUpperCase() +
+            inputEls[index].name.slice(1),
           "Filter Removed"
         );
         img.style.filter = `${blur} ${brightness} ${contrast} ${grayscale} ${hueRotate} ${invert} ${opacity} ${saturate} ${sepia}`;
@@ -244,7 +245,7 @@ saveBtn.addEventListener("click", () => {
   ctx.drawImage(selectImage, 0, 0, canvas.width, canvas.height);
 
   const link = document.createElement("a");
-  link.download = "image.jpg";
+  link.download = "image";
   link.href = canvas.toDataURL();
   link.click();
   alert("Image Saved");
